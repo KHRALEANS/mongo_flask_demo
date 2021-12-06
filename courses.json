@@ -1,0 +1,27 @@
+[
+    {
+        "_id": 1,
+        "name": "自然辩证法概论",
+        "teacher": "Marx",
+        "text": "第一讲...",
+        "likes": 299,
+        "videos": [
+            
+        ]
+    },
+    {
+        "_id": 2,
+        "name": "高等数学",
+        "teacher": "Eular",
+        "text": "第一讲...",
+        "likes": 301,
+        "videos": [
+            {
+                "video_id": 1
+            },
+            {
+                "video_id": 2
+            }
+        ]
+    }
+]

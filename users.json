@@ -1,0 +1,49 @@
+[
+    {
+        "_id": 1,
+        "username": "Someone",
+        "password": "1password",
+        "phone": 12312345678,
+        "address": "Guangdong, Guangzhou",
+        "state": 1,
+        "courses": [
+            {
+                "course_id": 1,
+                "learning_state": 0,
+                "favourite": 1
+            },
+            {
+                "course_id": 2,
+                "learning_state": 1,
+                "favourite": 0
+            }
+        ],
+        "videos": [
+            {
+                "video_id": 1,
+                "offset": "1:17:45",
+                "state": 0
+            },
+            {
+                "video_id": 2,
+                "offset": "2:31:27",
+                "state": 1
+            }
+        ]
+    },
+    {
+        "_id": 2,
+        "username": "Anotherone",
+        "password": "2ndpassword",
+        "phone": 32112345678,
+        "address": "Guangdong, Shenzhen",
+        "state": 0,
+        "courses":[
+            {
+                "course_id": 2,
+                "learning_state": 0,
+                "favourite": 1
+            }
+        ]
+    }
+]
