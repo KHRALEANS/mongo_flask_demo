@@ -42,7 +42,7 @@ def add_many_courses():                     # 批量添加课程到 courses
     return '',204
 
 @app.route('/users', methods=['GET'])
-def get_users():                        # 获取用户
+def get_users():                            # 获取用户
     users = mongo.db.users                  # 获取 users 集合
     username = request.args.get('username', type = str)     # 查询用户名
     q = []
