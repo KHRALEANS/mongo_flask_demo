@@ -19,7 +19,7 @@ app.config['MONGO_URI'] = 'mongodb://localhost:27017/platform'      # 设置连�
 mongo = PyMongo(app)
 
 @app.route('/courses', methods=['GET'])
-def get_all_courses():
+def get_all_courses():                      # 获取课程
     courses = mongo.db.courses              # 获取 courses 集合
     sorted_by = request.args.get('sort', default='id', type = str)  # 排序方式
     if sorted_by == 'likes':                # 根据点赞数排序
@@ -42,7 +42,7 @@ def add_many_courses():                     # 批量添加课程到 courses
     return '',204
 
 @app.route('/users', methods=['GET'])
-def get_all_users():
+def get_users():                        # 获取用户
     users = mongo.db.users                  # 获取 users 集合
     username = request.args.get('username', type = str)     # 查询用户名
     q = []
